@@ -1,0 +1,181 @@
+:root {
+  --primary-color: #2bb3b1;
+  --secondary-color: #C0DF34;
+  --tertiary-color: #4abebd;
+  --dark-text-color: #98A6BD;
+  --light-text-color: #E5EFF5;
+  --main-font: 'Karla', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  height: auto;
+  padding: 72px 32px 76px 32px;
+  background-color: #e6eff6;
+}
+
+.single-price-card {
+  width: 311px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single-price-card__join {
+  width: 311px;
+  height: 267px;
+  padding: 30px 0 0 24px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.single-price-card__join-title {
+  margin-bottom: 25px;
+  font-family: var(--main-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: var(--primary-color);
+}
+
+.single-price-card__join-subtitle {
+  margin-bottom: 25px;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--secondary-color);
+}
+
+.single-price-card__join-text {
+  margin-right: 24px;
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--dark-text-color);
+}
+
+.single-price-card__subscription {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: 
+  "title title title"
+  "amount amount-monthly ."
+  "subscription-text subscription-text subscription-text"
+  "button button button";
+  width: 311px;
+  height: 228px;
+  background-color: var(--primary-color);
+}
+
+.single-price-card__subscription-title {
+  grid-area: title;
+  margin: 28px 0 27px 24px;
+  font-family: var(--main-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: white;
+}
+
+.single-price-card__subscription-amount {
+  grid-area: amount;
+  margin: 0 0 16px 24px;
+  font-family: var(--main-font);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: white;
+}
+
+.single-price-card__subscription-amount-monthly {
+  grid-area: amount-monthly;
+  margin-top: 8px;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: var(--light-text-color);
+}
+
+.single-price-card__subscription-text {
+  grid-area: subscription-text;
+  margin: 0 0 33px 24px;
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: white;
+}
+
+.single-price-card__subscription-button {
+  grid-area: button;
+  margin: 0 0 24px 24px;
+  width: 263px;
+  height: 48px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  border-style: none;
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.single-price-card__subscription-button:hover {
+  background-color: #bad532;
+  cursor: pointer;
+}
+
+.single-price-card__us {
+  width: 311px;
+  height: 227px;
+  padding: 29px 0 0 24px;
+  background-color: var(--tertiary-color);
+  border-radius: 0 0 5px 5px;
+}
+
+.single-price-card__us-title {
+  margin-bottom: 24px;
+  font-family: var(--main-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: white;
+}
+
+.single-price-card__us-text {
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--light-text-color);
+}
+
+footer {
+  background-color: #e6eff6;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+footer a {
+  color: var(--primary-color);
+}

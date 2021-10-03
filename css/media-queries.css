@@ -1,0 +1,82 @@
+@media only screen and (min-width: 810px) {
+  main {
+    height: 100vh;
+  }
+
+  .single-price-card {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "join join"
+    "subscription us";
+    width: auto;
+  }
+
+  .single-price-card__join {
+    grid-area: join;
+    width: 622px;
+    max-height: 216px;
+    padding: 45px 0 0 41px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .single-price-card__join-title {
+    margin-bottom: 28px;
+    font-size: 2.4rem;
+  }
+
+  .single-price-card__join-subtitle {
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+  }
+
+  .single-price-card__join-text {
+    font-size: 1.6rem;
+  }
+
+  .single-price-card__subscription {
+    grid-area: subscription;
+    border-radius: 0 0 0 10px;
+  }
+
+  .single-price-card__us {
+    grid-area: us;
+    height: 228px;
+    border-radius: 0 0 10px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .single-price-card__join{
+    width: 637px;
+  }
+
+  .single-price-card__subscription {
+    width: 318px;
+    height: 259px;
+    padding: 18px 0 0 18px;
+  }
+
+  .single-price-card__subscription-title {
+    margin-bottom: 23px;
+  }
+
+  .single-price-card__subscription-text {
+    margin-bottom: 30px;
+  }
+
+  .single-price-card__subscription-button {
+    width: 237px;
+  }
+
+  .single-price-card__us {
+    width: 318px;
+    height: 259px;
+    padding: 45px 0 0 41px;
+  }  
+
+  .single-price-card__us-title {
+    margin-bottom: 22px;
+  }
+}
